@@ -1,0 +1,2 @@
+Current_Portfolio_TVaR_GBPk,Sum_Standalone_TVaR_GBPk,Current_Div_Benefit_%,Stressed_Portfolio_TVaR_GBPk,Stressed_Div_Benefit_%,Potential_Underestimation_GBPk,Underestimation_%,Warning_Threshold_%,Warning_Triggered,Stress_Scenario
+991672.408021051,1402562.3984360627,29.29566562408757,1156028.4041870558,17.57739937445254,164355.9961660048,16.573617944456906,15,True,Moderate stress (+50% tail correlation)

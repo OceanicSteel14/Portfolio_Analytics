@@ -1,0 +1,7 @@
+LoB,Overall_Verdict,Recommendation
+PropCat_XL,QUESTIONABLE,"Maintain structure but market test for improved pricing. Target 1.50x vs current 1.62x average. Est. savings: £775k annually, improves ROAC from 1.9% to 4.5%"
+Specialty_Casualty,QUESTIONABLE,No action required - structure is optimal for this attritional line
+Marine_Hull_Cargo,INEFFICIENT,"Replace 5M xs 5M XL with 30% QS at 28% commission. Estimated savings: £600k annually, improves ROAC from 14.4% to 18.2%"
+Political_Violence,QUESTIONABLE,Structure well-designed for this high-uncertainty line. Monitor reinsurer appetite for improved pricing on XL layer
+Energy,QUESTIONABLE,"Raise XL attachment from £7M to £15M, restructure ASL to 20M xs 30M. Estimated savings: £2,300k annually (45%), improves ROAC from 10.1% to 15.8%"
+Cyber,EFFICIENT,"Consider adding Cat XL layer (30M xs 15M) to cap systemic event exposure. Additional cost £1,200k, but protects against £500M+ systemic events"
