@@ -1,0 +1,339 @@
+{
+  "portfolio_name": "Fidelis London Market Portfolio - Synthetic",
+  "currency": "GBP",
+  "units": "thousands",
+  "n_simulations": 100000,
+  "random_seed": 42,
+  "generated_by": "Data Architect Agent",
+  "generated_date": "2024",
+  "lines_of_business": {
+    "PropCat_XL": {
+      "gwp": 25000,
+      "distribution": {
+        "type": "ParetoGPD",
+        "threshold": 5000,
+        "shape": 0.7,
+        "scale": 3500,
+        "freq": 0.8
+      },
+      "description": "Property Catastrophe XL - heavy-tailed cat exposure",
+      "statistics": {
+        "gwp": 25000,
+        "mean_loss": 12753.164659735377,
+        "std_loss": 64403.9820362859,
+        "cv": 5.050039245523413,
+        "loss_ratio_pct": 51.0126586389415,
+        "zero_pct": 20.051,
+        "var_995": 175741.40859280492,
+        "tvar_995": 451277.8944705043,
+        "percentiles": {
+          "p50": 6959.7165415600675,
+          "p75": 11345.670050563323,
+          "p90": 21718.776131005234,
+          "p95": 35419.92678778323,
+          "p99": 109568.75845375874,
+          "p995": 175741.40859280492,
+          "max": 11120227.125212343
+        }
+      }
+    },
+    "Specialty_Casualty": {
+      "gwp": 20000,
+      "distribution": {
+        "type": "Lognormal",
+        "mean": 12000,
+        "cv": 0.8
+      },
+      "description": "Specialty Casualty - D&O, PI, Liability",
+      "statistics": {
+        "gwp": 20000,
+        "mean_loss": 11958.061618340127,
+        "std_loss": 9601.600524704761,
+        "cv": 0.802939542473903,
+        "loss_ratio_pct": 59.79030809170064,
+        "zero_pct": 0.0,
+        "var_995": 57948.5166417353,
+        "tvar_995": 73604.79307912945,
+        "percentiles": {
+          "p50": 9317.16907040258,
+          "p75": 15047.362259890971,
+          "p90": 23013.863198127496,
+          "p95": 29704.89978356176,
+          "p99": 48000.927468418704,
+          "p995": 57948.5166417353,
+          "max": 236378.4165924639
+        }
+      }
+    },
+    "Marine_Hull_Cargo": {
+      "gwp": 15000,
+      "distribution": {
+        "type": "Lognormal",
+        "mean": 8000,
+        "cv": 1.2
+      },
+      "description": "Marine Hull & Cargo",
+      "statistics": {
+        "gwp": 15000,
+        "mean_loss": 7956.616953462193,
+        "std_loss": 9448.618088245828,
+        "cv": 1.1875170243220539,
+        "loss_ratio_pct": 53.04411302308129,
+        "zero_pct": 0.0,
+        "var_995": 56245.10256246605,
+        "tvar_995": 80742.8315203346,
+        "percentiles": {
+          "p50": 5125.460673884209,
+          "p75": 9659.948624080418,
+          "p90": 17116.76354448718,
+          "p95": 24130.283287811326,
+          "p99": 45241.420846462664,
+          "p995": 56245.10256246605,
+          "max": 240630.76321452446
+        }
+      }
+    },
+    "Political_Violence": {
+      "gwp": 12000,
+      "distribution": {
+        "type": "ParetoGPD",
+        "threshold": 2000,
+        "shape": 0.9,
+        "scale": 2500,
+        "freq": 0.3
+      },
+      "description": "Political Violence - terrorism, war, civil commotion",
+      "statistics": {
+        "gwp": 12000,
+        "mean_loss": 5751.120633453225,
+        "std_loss": 190423.19784647302,
+        "cv": 33.110624864798666,
+        "loss_ratio_pct": 47.92600527877688,
+        "zero_pct": 70.016,
+        "var_995": 105355.6230868975,
+        "tvar_995": 634132.8542710197,
+        "percentiles": {
+          "p50": 0.0,
+          "p75": 2503.8097930516624,
+          "p90": 6814.162789938012,
+          "p95": 13252.278959838493,
+          "p99": 58232.64370777798,
+          "p995": 105355.6230868975,
+          "max": 40720872.5934374
+        }
+      }
+    },
+    "Energy": {
+      "gwp": 18000,
+      "distribution": {
+        "type": "Lognormal",
+        "mean": 10000,
+        "cv": 1.5
+      },
+      "description": "Energy - upstream/downstream, offshore",
+      "statistics": {
+        "gwp": 18000,
+        "mean_loss": 9987.852501315298,
+        "std_loss": 14832.878615740454,
+        "cv": 1.4850918767359766,
+        "loss_ratio_pct": 55.488069451751656,
+        "zero_pct": 0.0,
+        "var_995": 91475.51955705725,
+        "tvar_995": 135221.08330498476,
+        "percentiles": {
+          "p50": 5548.016524425584,
+          "p75": 11533.463765030916,
+          "p90": 22315.500684093116,
+          "p95": 32980.26300899009,
+          "p99": 69912.73843221542,
+          "p995": 91475.51955705725,
+          "max": 716448.0065956219
+        }
+      }
+    },
+    "Cyber": {
+      "gwp": 8000,
+      "distribution": {
+        "type": "CompoundNegBinPareto",
+        "n": 2,
+        "p": 0.4,
+        "pareto_shape": 2.5,
+        "pareto_scale": 800
+      },
+      "description": "Cyber - emerging class with systemic risk",
+      "statistics": {
+        "gwp": 8000,
+        "mean_loss": 3980.7543307553274,
+        "std_loss": 4177.174831685577,
+        "cv": 1.049342532748807,
+        "loss_ratio_pct": 49.75942913444159,
+        "zero_pct": 16.116,
+        "var_995": 20857.215795915494,
+        "tvar_995": 27582.941790089993,
+        "percentiles": {
+          "p50": 2918.084474084314,
+          "p75": 5675.51900732268,
+          "p90": 9102.18085678432,
+          "p95": 11709.251291373583,
+          "p99": 17985.757834152115,
+          "p995": 20857.215795915494,
+          "max": 240009.21937995695
+        }
+      }
+    }
+  },
+  "correlation": {
+    "method": "Gaussian copula",
+    "ordering": [
+      "PropCat_XL",
+      "Specialty_Casualty",
+      "Marine_Hull_Cargo",
+      "Political_Violence",
+      "Energy",
+      "Cyber"
+    ],
+    "target_matrix": [
+      [
+        1.0,
+        0.1,
+        0.25,
+        0.15,
+        0.3,
+        0.2
+      ],
+      [
+        0.1,
+        1.0,
+        0.15,
+        0.1,
+        0.1,
+        0.25
+      ],
+      [
+        0.25,
+        0.15,
+        1.0,
+        0.2,
+        0.35,
+        0.15
+      ],
+      [
+        0.15,
+        0.1,
+        0.2,
+        1.0,
+        0.2,
+        0.1
+      ],
+      [
+        0.3,
+        0.1,
+        0.35,
+        0.2,
+        1.0,
+        0.15
+      ],
+      [
+        0.2,
+        0.25,
+        0.15,
+        0.1,
+        0.15,
+        1.0
+      ]
+    ],
+    "empirical_pearson": {
+      "PropCat_XL": {
+        "PropCat_XL": 1.0,
+        "Specialty_Casualty": 0.0274,
+        "Marine_Hull_Cargo": 0.0618,
+        "Political_Violence": 0.0097,
+        "Energy": 0.0795,
+        "Cyber": 0.0544
+      },
+      "Specialty_Casualty": {
+        "PropCat_XL": 0.0274,
+        "Specialty_Casualty": 1.0,
+        "Marine_Hull_Cargo": 0.1085,
+        "Political_Violence": 0.0067,
+        "Energy": 0.0682,
+        "Cyber": 0.1878
+      },
+      "Marine_Hull_Cargo": {
+        "PropCat_XL": 0.0618,
+        "Specialty_Casualty": 0.1085,
+        "Marine_Hull_Cargo": 1.0,
+        "Political_Violence": 0.0203,
+        "Energy": 0.2408,
+        "Cyber": 0.0959
+      },
+      "Political_Violence": {
+        "PropCat_XL": 0.0097,
+        "Specialty_Casualty": 0.0067,
+        "Marine_Hull_Cargo": 0.0203,
+        "Political_Violence": 1.0,
+        "Energy": 0.01,
+        "Cyber": 0.0121
+      },
+      "Energy": {
+        "PropCat_XL": 0.0795,
+        "Specialty_Casualty": 0.0682,
+        "Marine_Hull_Cargo": 0.2408,
+        "Political_Violence": 0.01,
+        "Energy": 1.0,
+        "Cyber": 0.0926
+      },
+      "Cyber": {
+        "PropCat_XL": 0.0544,
+        "Specialty_Casualty": 0.1878,
+        "Marine_Hull_Cargo": 0.0959,
+        "Political_Violence": 0.0121,
+        "Energy": 0.0926,
+        "Cyber": 1.0
+      }
+    },
+    "notes": {
+      "PropCat_Energy": "0.30 - correlated via windstorm exposure (offshore platforms)",
+      "Marine_Energy": "0.35 - highest correlation, shared offshore exposure",
+      "PropCat_Marine": "0.25 - natural catastrophe correlation",
+      "Casualty_Cyber": "0.25 - D&O/cyber liability overlap",
+      "PropCat_Cyber": "0.20 - business interruption overlap"
+    }
+  },
+  "portfolio_summary": {
+    "total_gwp": 98000,
+    "mean_loss": 52387.57069706155,
+    "std_loss": 204135.39561120718,
+    "cv": 3.8966379409277945,
+    "mean_lr_pct": 53.45670479291995,
+    "percentiles": {
+      "p50": 38874.28554022829,
+      "p75": 58169.16210441298,
+      "p90": 86766.08568048796,
+      "p95": 114446.04362675421,
+      "p99": 230586.09842743797,
+      "p995": 323765.2488634501
+    },
+    "tvar_995": 991672.408021051,
+    "max": 40771959.34465137,
+    "diversification": {
+      "sum_standalone_var_995": 507623.3862368765,
+      "portfolio_var_995": 323765.2488634501,
+      "div_benefit_var_pct": 36.21939854591947,
+      "sum_standalone_tvar_995": 1402562.3984360627,
+      "portfolio_tvar_995": 991672.408021051,
+      "div_benefit_tvar_pct": 29.295665624087576
+    }
+  },
+  "capital_framework": {
+    "standard": "Lloyd's SCR / Solvency II aligned",
+    "confidence_level": 0.995,
+    "measure": "TVaR",
+    "allocation_method": "Euler gradient allocation",
+    "hurdle_rate_range": [
+      0.1,
+      0.15
+    ],
+    "notes": "1-in-200 TVaR is Lloyds standard for SCR"
+  }
+}

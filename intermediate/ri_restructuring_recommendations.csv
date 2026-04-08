@@ -1,0 +1,7 @@
+LoB,Current_Structure,Recommended_Structure,Current_RI_Premium,Recommended_RI_Premium,Annual_Savings,Savings_Pct,Current_ROAC,Projected_ROAC,ROAC_Improvement,Current_Verdict,Priority,Rationale
+Marine_Hull_Cargo,5M xs 5M XL,30% QS @ 28% comm,3262,2662,600,18.4,14.4,18.2,3.8,INEFFICIENT,URGENT,"XL has wrong structure - attaches below mean (0.63x), exhausts frequently (23.9%), provides only 6.2% tail protection"
+Energy,7M xs 7M XL + 15M xs 15M ASL,15M xs 15M XL + 20M xs 30M ASL,5176,2876,2300,44.4,10.1,15.8,5.7,QUESTIONABLE,HIGH,"XL attachment too low (0.70x mean), responds in 41.6% of scenarios - working layer pricing"
+Specialty_Casualty,25% QS @ 30% comm,15% QS @ 32% comm,3500,2100,1400,40.0,0.3,8.2,7.9,QUESTIONABLE,HIGH,"Accretion dilution - gross standalone ROAC 12.5%, over-ceding profitable business destroys value"
+PropCat_XL,10M xs 10M + 20M xs 20M + 30M xs 40M,"Same structure, improved pricing",6441,5666,775,12.0,1.9,4.5,2.6,QUESTIONABLE,MEDIUM,Structure appropriate but Layer 1 mispriced as working layer (attaches at 0.78x mean)
+Political_Violence,40% QS + 8M xs 8M Cat XL,Monitor for pricing improvement,3710,3710,0,0.0,0.4,0.4,0.0,QUESTIONABLE,MONITOR,Well-designed hybrid for high-uncertainty line. Exceptional capital impact (70.5x) justifies cost
+Cyber,30% QS @ 30% comm,Add 30M xs 15M Cat XL for systemic risk,1680,2880,-1200,-71.4,12.3,10.8,-1.5,EFFICIENT,MONITOR,QS efficient for modeled scenarios but leaves £500M+ systemic tail unprotected

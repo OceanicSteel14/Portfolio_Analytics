@@ -1,0 +1,89 @@
+{
+  "check1": {
+    "closest_scenario": "B",
+    "closest_correlation": 0.7990382178452237,
+    "status": "ALIGNED",
+    "corr_a": 0.34906813987168056,
+    "corr_b": 0.7990382178452237,
+    "corr_c": -0.3682493180220857
+  },
+  "check2": {
+    "total_flags": 6,
+    "consistent_count": 4,
+    "mismatches_count": 2,
+    "status": "FLAG",
+    "details": [
+      {
+        "LoB": "PropCat_XL",
+        "Flag": "REDUCE",
+        "ROAC_%": "-9.8%",
+        "Accretive_Profit_\u00a3M": -38.65600387991457,
+        "Capital/GWP": "0.0x",
+        "Consistent": "\u2713",
+        "Issue": "\u2713 Correct: Sub-hurdle ROAC -9.8% or dilutive (\u00a3-38.7M)"
+      },
+      {
+        "LoB": "Specialty_Casualty",
+        "Flag": "REDUCE",
+        "ROAC_%": "-11.8%",
+        "Accretive_Profit_\u00a3M": -1.2988985391059458,
+        "Capital/GWP": "0.0x",
+        "Consistent": "\u2713",
+        "Issue": "\u2713 Correct: Sub-hurdle ROAC -11.8% or dilutive (\u00a3-1.3M)"
+      },
+      {
+        "LoB": "Marine_Hull_Cargo",
+        "Flag": "GROW",
+        "ROAC_%": "9.4%",
+        "Accretive_Profit_\u00a3M": 1.0526109861841528,
+        "Capital/GWP": "0.0x",
+        "Consistent": "\u2717",
+        "Issue": "GROW flagged but ROAC 9.4% \u2264 10.0% hurdle"
+      },
+      {
+        "LoB": "Political_Violence",
+        "Flag": "STRATEGIC REVIEW",
+        "ROAC_%": "-11.8%",
+        "Accretive_Profit_\u00a3M": -38.42163589062805,
+        "Capital/GWP": "0.0x",
+        "Consistent": "\u2713",
+        "Issue": "Check: ROAC -11.8%, cap 0.0x GWP (may not be 'strategic review' level)"
+      },
+      {
+        "LoB": "Energy",
+        "Flag": "GROW",
+        "ROAC_%": "10.1%",
+        "Accretive_Profit_\u00a3M": 1.5064987184506622,
+        "Capital/GWP": "0.0x",
+        "Consistent": "\u2713",
+        "Issue": "\u2713 Correct: ROAC 10.1% > 10.0%, profit \u00a31.5M > 0"
+      },
+      {
+        "LoB": "Cyber",
+        "Flag": "GROW",
+        "ROAC_%": "7.3%",
+        "Accretive_Profit_\u00a3M": 0.3291055624337897,
+        "Capital/GWP": "0.0x",
+        "Consistent": "\u2717",
+        "Issue": "GROW flagged but ROAC 7.3% \u2264 10.0% hurdle"
+      }
+    ]
+  },
+  "check3": {
+    "portfolio_change_pct": -4.081632653061225,
+    "status": "REALISTIC",
+    "flagged_lobs": 3
+  },
+  "check4": {
+    "scenario_ab_corr": -0.05632637739137021,
+    "scenario_ac_corr": 0.32315932078795223,
+    "scenario_bc_corr": -0.6419768143945705,
+    "scenarios_distinct": true,
+    "recommended_blend_explained": true,
+    "explanation": "Recommendations are closely aligned to Scenario B (Max EVA approach)\nwith strong correlation of 0.7990. This suggests the advisor is\npursuing expected value maximization rather than pure ROAC or RI efficiency."
+  },
+  "overall_verdict": "NEEDS CLARIFICATION",
+  "issues": [
+    "Check 2: 2 traffic light inconsistencies"
+  ]
+}

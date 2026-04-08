@@ -1,0 +1,11 @@
+{
+  "total_gwp": 98000,
+  "gross_capital": 3238556.467318219,
+  "net_capital": 2547613.0316889873,
+  "capital_freed": 690943.4356292319,
+  "n_lines_total": 6,
+  "n_lines_accretive": 2,
+  "portfolio_roac": -0.12317243234210865,
+  "hurdle_roac": 0.12,
+  "confidence_level": 0.995
+}
