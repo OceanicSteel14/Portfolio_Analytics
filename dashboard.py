@@ -12,6 +12,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 import plotly.io as pio
 import json, warnings, sys, os
+from io import StringIO
 
 warnings.filterwarnings("ignore")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -511,7 +512,7 @@ and TVaR all scale proportionally with GWP.
         def compute_four_scenarios(accretion_json, hurdle_rate):
             from scipy.optimize import linprog, minimize
 
-            df = pd.read_json(accretion_json)
+            df = pd.read_json(StringIO(accretion_json))
 
             # ── Column compatibility ──────────────────────────────────
             profit_c = "EP_Net" if "EP_Net" in df.columns else "Net_Profit"
@@ -979,7 +980,7 @@ with tab_sens:
 
         @st.cache_data
         def run_sensitivity(accretion_json, base_hurdle):
-            df = pd.read_json(accretion_json)
+            df = pd.read_json(StringIO(accretion_json))
             profit_c = "EP_Net" if "EP_Net" in df.columns else "Net_Profit"
             cap_c    = "TVaRCapital" if "TVaRCapital" in df.columns else "Allocated_Capital"
             base_profit = df[profit_c].sum()
